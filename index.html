@@ -9,22 +9,8 @@
         font-family: "Times New Roman", serif;
       }
       h1 {
-        font-size: 40px !important;
-        font-weight: 800;
-        line-height: 1.2;
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 100%;
-        white-space: normal;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        hyphens: auto;
-      }
-      .sub-text {
-        font-size: 20px;
-        margin-left: 0;
-        margin-right: 0;
-        white-space: normal;
+        font-size: 2rem !important; /* Added !important to ensure the custom font-size is applied */
+        font-weight: 600;
       }
       .bar {
         transition: height 1.5s ease, opacity 1.5s ease;
@@ -35,42 +21,40 @@
         .bar-container {
           height: 280px !important;
         }
-        .sub-text {
-          font-size: 1rem;
-        }
       }
       @media (max-width: 320px) {
         .bar-container {
           height: 220px !important;
         }
         h1 {
-          font-size: 1.5rem;
+          font-size: 1rem;
           line-height: 1.4rem;
         }
-        .sub-text {
+        p {
           font-size: 0.875rem;
+        }
+        span.text-xs {
+          font-size: 0.7rem;
         }
       }
     </style>
   </head>
   <body class="bg-[#f8ffff] px-4 py-10 overflow-x-hidden">
     <div class="max-w-4xl mx-auto text-center px-2 sm:px-4">
-      <!-- Header text adjusted to two lines with no side padding -->
-      <h1 class="text-black leading-snug w-full text-left sm:text-center">
+      <h1 class="text-black leading-snug">
         In base al tuo profilo pelle, ci aspettiamo che <br> riuscirai a ridurre
-        visibilmente rughe, borse sotto gli <br> occhi e zampe di gallina,
+        visibilmente rughe, borse sotto gli occhi e zampe  <br>  di gallina,
         entro <span class="text-[#0055B5]">luglio 2025</span>
       </h1>
-      <!-- Subheader text adjusted to one line with no side padding -->
-      <p class="sub-text mt-4 text-gray-700 w-full text-left sm:text-center">
-        In base al tuo profilo pelle, ci aspettiamo che riuscirai a ridurre visibilmente rughe, borse sotto gli <br> occhi e zampe di gallina, entro luglio 2025.
+      <p class="text-base sm:text-lg mt-4 text-gray-700">
+        In base al tuo profilo pelle, ci aspettiamo che riuscirai a ridurre visibilmente rughe, borse sotto gli occhi e zampe <br>  di gallina, entro luglio 2025.
       </p>
 
       <!-- Bars Section -->
       <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-center">
         <!-- Bar 1 -->
         <div class="flex flex-col items-center">
-          <div class="flex flex-col justify-end bar-container h-[360px] w-[80%] sm:w-[90%] md:w-[80%] bg-white border border-gray-300 rounded-xl">
+          <div class="flex flex-col justify-end bar-container h-[360px] w-full bg-white border border-gray-300 rounded-xl">
             <div class="w-full bar rounded-b-xl" data-target="85%" style="background-color: #e89c90;"></div>
           </div>
           <span class="mt-2 text-black text-xs sm:text-sm">Aprile</span>
@@ -78,28 +62,28 @@
 
         <!-- Bar 2 -->
         <div class="flex flex-col items-center">
-          <div class="flex flex-col justify-end bar-container h-[360px] w-[80%] sm:w-[90%] md:w-[80%] bg-white border border-gray-300 rounded-xl">
+          <div class="flex flex-col justify-end bar-container h-[360px] w-full bg-white border border-gray-300 rounded-xl">
             <div class="w-full bar rounded-b-xl" data-target="60%" style="background-color: #e6af88;"></div>
           </div>
         </div>
 
         <!-- Bar 3 -->
         <div class="flex flex-col items-center">
-          <div class="flex flex-col justify-end bar-container h-[360px] w-[80%] sm:w-[90%] md:w-[80%] bg-white border border-gray-300 rounded-xl">
+          <div class="flex flex-col justify-end bar-container h-[360px] w-full bg-white border border-gray-300 rounded-xl">
             <div class="w-full bar rounded-b-xl" data-target="65%" style="background-color: #f5c58d;"></div>
           </div>
         </div>
 
         <!-- Bar 4 -->
         <div class="flex flex-col items-center">
-          <div class="flex flex-col justify-end bar-container h-[360px] w-[80%] sm:w-[90%] md:w-[80%] bg-white border border-gray-300 rounded-xl">
+          <div class="flex flex-col justify-end bar-container h-[360px] w-full bg-white border border-gray-300 rounded-xl">
             <div class="w-full bar rounded-b-xl" data-target="50%" style="background-color: #f6eb99;"></div>
           </div>
         </div>
 
         <!-- Bar 5 with "Obiettivo" -->
         <div class="flex flex-col items-center">
-          <div class="flex flex-col justify-end bar-container h-[360px] w-[80%] sm:w-[90%] md:w-[80%] bg-white border border-gray-300 rounded-xl relative">
+          <div class="flex flex-col justify-end bar-container h-[360px] w-full bg-white border border-gray-300 rounded-xl relative">
             <div class="w-full bar rounded-b-xl relative flex items-start justify-center" data-target="40%" style="background-color: #9ae97a;">
               <div class="absolute -top-6 text-center">
                 <span class="bg-green-600 text-white text-xs px-2 py-0.5 rounded-full">Obiettivo</span>
@@ -111,7 +95,7 @@
 
         <!-- Bar 6 -->
         <div class="flex flex-col items-center">
-          <div class="flex flex-col justify-end bar-container h-[360px] w-[80%] sm:w-[90%] md:w-[80%] bg-white border border-gray-300 rounded-xl">
+          <div class="flex flex-col justify-end bar-container h-[360px] w-full bg-white border border-gray-300 rounded-xl">
             <div class="w-full bar rounded-b-xl" data-target="30%" style="background-color: #87c4e8;"></div>
           </div>
           <span class="mt-2 text-black text-xs sm:text-sm">Luglio</span>
